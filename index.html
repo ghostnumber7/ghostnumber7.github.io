@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>untitled.cl</title>
+
+<style>
+:root {
+  --bg: #0b0f0b;
+  --fg: #33ff33;
+  --muted: #1f3d1f;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.terminal {
+  max-width: 700px;
+  width: 100%;
+}
+
+.terminal div {
+  margin-bottom: 0.8rem;
+}
+
+.prompt::before {
+  content: "marco@untitled:~$ ";
+  color: var(--muted);
+}
+
+a {
+  color: var(--fg);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+</style>
+</head>
+
+<body>
+  <div class="terminal">
+    <div class="prompt">cat README</div>
+
+    <div>untitled.cl</div>
+    <div></div>
+    <div>This domain intentionally contains very little.</div>
+    <div>It is primarily used for infrastructure experiments and email.</div>
+    <div></div>
+    <div>Sometimes I build things.</div>
+    <div></div>
+    <div>
+      <span class="prompt"></span>
+      <a href="https://github.com/ghostnumber7">
+        open github.com/ghostnumber7
+      </a>
+    </div>
+  </div>
+</body>
+</html>
